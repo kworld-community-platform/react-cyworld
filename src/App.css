@@ -1,17 +1,134 @@
 .App {
+  position: absolute;
+  top: 0%;
+  left: 0%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .cyworld {
-  position: absolute;
-  left: 40%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  width: 1280px;
-  height: 720px;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  max-height: 720px;
+  margin: 100px 0 0 100px;
   background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cyworld .miniHome {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+}
+.cyworld .miniHome > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 2px;
+}
+
+.cyworld .miniHome .blogTotalInfo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cyworld .miniHome .blogTotalInfo * {
+  margin: 10px 1%;
+}
+.cyworld .miniHome .blogTotalInfo .blogInfo {
+  background-color: white;
+  border: 8px solid gray;
+  border-radius: 12px;
+  /* box-shadow: 5px 5px 5px gray; */
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cyworld .miniHome .blogTotalInfo .blogInfo .profileImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px dotted black;
+  border-radius: 12px;
+  padding: 10px;
+}
+.cyworld .miniHome .blogTotalInfo .blogInfo .profileImg > img {
+  width: 100%;
+  height: 100%;
+}
+.cyworld .miniHome .blogTotalInfo .blogInfo .userInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cyworld .pageContent {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cyworld .pageContent > * {
+  margin-bottom: 20px;
+}
+.cyworld .pageContent .homeTitle {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cyworld .pageContent .homeTitle .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.cyworld .pageContent .homeTitle .titleInfo {
+  font-size: 1em;
+}
+.cyworld .pageContent .homeContent {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.cyworld .pageContent .homeContent .content .miniRoom {
+  width: 100%;
+  height: 40%;
+  background-color: antiquewhite;
+}
+.cyworld .contentMenu > * {
+  margin-bottom: 10px;
+  padding: 2px;
+  width: 60px;
+  height: 35px;
+  border: 1px solid black;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cyworld .sideBar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
